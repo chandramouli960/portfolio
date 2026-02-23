@@ -12,7 +12,7 @@ const About = () => {
   const highlights = [
     { icon: "🧪", title: "1+ Year", subtitle: "QA Experience" },
     { icon: "🚀", title: "Rest Assured", subtitle: "API Testing" },
-    { icon: "✅", title: "Jenkins", subtitle: "CI/CD" },
+    { image: "/portfolio/jenkins.png", title: "Jenkins", subtitle: "CI/CD" },
     { image: "/portfolio/playwright.png", title: "Playwright", subtitle: "Automation" },
   ];
 
