@@ -1,36 +1,121 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chandramouli Bhandaru | QA Automation Engineer Portfolio
+
+A modern, space-themed portfolio showcasing QA Automation Engineering experience, built with Next.js and deployed on GitHub Pages.
+
+**Live Site:** [https://chandramouli960.github.io/portfolio/](https://chandramouli960.github.io/portfolio/)
+
+---
+
+## Features
+
+- **Single-page layout** with smooth scroll navigation
+- **Intro animation** (4.5s) with profile reveal and loading dots
+- **Starfield background** with layered twinkling stars
+- **Responsive design** — mobile-first, works across all devices
+- **Sections:** Hero, About, Skills, Experience, Projects, Education, Contact
+- **Framer Motion** animations — scroll-triggered, staggered, hover effects
+- **SEO optimized** — metadata, Open Graph, Twitter cards
+- **Dark theme** with glassmorphism-style cards
+
+---
+
+## Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Framework | Next.js 16 (App Router), React 19 |
+| Language | TypeScript |
+| Styling | Tailwind CSS 4 |
+| Animations | Framer Motion |
+| Deployment | GitHub Pages (static export) |
+
+---
+
+## Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── components/
+│   │   ├── IntroAnimation.tsx    # Initial loading animation
+│   │   ├── StarfieldBackground.tsx # Animated starfield
+│   │   ├── StarDecoration.tsx    # Reusable star components
+│   │   ├── Navigation.tsx         # Fixed nav with scroll detection
+│   │   ├── Hero.tsx              # Hero section with profile & CTA
+│   │   ├── About.tsx             # Professional intro & highlights
+│   │   ├── Skills.tsx            # Technical skills grid
+│   │   ├── Experience.tsx        # Work experience timeline
+│   │   ├── Projects.tsx         # Project portfolio
+│   │   ├── Education.tsx         # Education credentials
+│   │   ├── Contact.tsx           # Contact cards
+│   │   └── Footer.tsx            # Footer with social links
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── public/
+│   ├── profile.png              # Profile picture
+│   └── *.svg                    # Icons
+├── .github/workflows/
+│   └── deploy.yml               # GitHub Pages deployment
+├── next.config.ts
+└── package.json
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- npm
+
+### Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000/portfolio](http://localhost:3000/portfolio) (basePath is `/portfolio`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Output is generated in the `out/` directory. The build also creates `out/.nojekyll` for GitHub Pages compatibility.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project deploys to **GitHub Pages** via GitHub Actions.
 
-## Deploy on Vercel
+- **Trigger:** Push to `main` branch
+- **Workflow:** `.github/workflows/deploy.yml`
+- **Publish directory:** `out/`
+- **URL:** `https://<username>.github.io/portfolio/`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+No manual steps required — push to `main` and the workflow builds and deploys automatically.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Configuration
+
+| Setting | Value |
+|---------|-------|
+| Base path | `/portfolio` |
+| Output | Static export |
+| Images | Unoptimized (for static hosting) |
+| Trailing slash | Enabled |
+
+---
+
+## License
+
+Private portfolio project.

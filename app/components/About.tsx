@@ -13,7 +13,7 @@ const About = () => {
     { icon: "🧪", title: "1+ Year", subtitle: "QA Experience" },
     { icon: "🚀", title: "Rest Assured", subtitle: "API Testing" },
     { icon: "✅", title: "Jenkins", subtitle: "CI/CD" },
-    { icon: "🏆", title: "Agile", subtitle: "Scrum" },
+    { image: "/portfolio/playwright.png", title: "Playwright", subtitle: "Automation" },
   ];
 
   return (
@@ -114,9 +114,17 @@ const About = () => {
               transition={{ duration: 0.6, delay: 0.3 + index * 0.15, ease: "easeOut" }}
               whileHover={{ scale: 1.03 }}
             >
-              <span className="text-4xl md:text-5xl mb-4 block">
-                {item.icon}
-              </span>
+              {"image" in item ? (
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-16 h-16 mx-auto mb-4 object-contain"
+                />
+              ) : (
+                <span className="text-4xl md:text-5xl mb-4 block">
+                  {item.icon}
+                </span>
+              )}
               <h3 className="text-2xl md:text-3xl font-bold mb-2 text-white">
                 {item.title}
               </h3>
