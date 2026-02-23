@@ -56,6 +56,11 @@ const Experience = () => {
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 80, scale: 0.9 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
+          <img
+            src="/portfolio/expertise.png"
+            alt="Expertise"
+            className="w-20 h-20 mx-auto mb-4 object-contain"
+          />
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Professional Experience
           </h2>
