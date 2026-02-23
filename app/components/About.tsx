@@ -5,13 +5,17 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Star, StarSmall } from "./StarDecoration";
 
+type Highlight = 
+  | { icon: string; title: string; subtitle: string }
+  | { image: string; title: string; subtitle: string };
+
 const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const highlights = [
-    { icon: "🧪", title: "1+ Year", subtitle: "QA Experience" },
-    { icon: "🚀", title: "Rest Assured", subtitle: "API Testing" },
+  const highlights: Highlight[] = [
+    { image: "/portfolio/expertise.png", title: "1+ Year", subtitle: "QA Experience" },
+    { image: "/portfolio/rest-assured.png", title: "Rest Assured", subtitle: "API Testing" },
     { image: "/portfolio/jenkins.png", title: "Jenkins", subtitle: "CI/CD" },
     { image: "/portfolio/playwright.png", title: "Playwright", subtitle: "Automation" },
   ];
