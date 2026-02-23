@@ -88,7 +88,7 @@ const IntroAnimation = ({ isLoading, onComplete }: IntroAnimationProps) => {
             }}
           >
             <img
-              src="/profile.png"
+              src="/portfolio/profile.png"
               alt="Chandramouli Bhandaru"
               className="w-full h-full object-cover"
             />
