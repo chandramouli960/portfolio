@@ -81,7 +81,7 @@ const Footer = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             suppressHydrationWarning
           >
-            © {currentYear} Chandramouli Bhandaru. Made with ✦ and passion.
+            © {currentYear} Chandramouli Bhandaru.
           </motion.p>
         </div>
       </div>
