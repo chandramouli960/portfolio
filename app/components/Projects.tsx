@@ -11,7 +11,7 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Playwright E2E Web Automation Architecture",
+      title: "Playwright Web Automation Architecture",
       domain: "Web Test Automation Framework",
       description: [
         "End-to-end automation framework using Page Object Model (POM) for maintainability and scalability.",
@@ -22,7 +22,7 @@ const Projects = () => {
       techStack: ["Playwright", "TypeScript", "Node.js", "POM", "Allure"],
     },
     {
-      title: "Selenium E2E Web Automation Architecture",
+      title: "Selenium Web Automation Architecture",
       domain: "Web Test Automation Framework",
       description: [
         "Scalable Selenium framework with Page Object Model and data-driven testing.",
